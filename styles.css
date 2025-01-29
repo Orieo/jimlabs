@@ -222,14 +222,14 @@ html {
 }
 
 #hero-img {
-    width: 100%;
+    width: 105%;
     height: auto; /* Ensure the image scales properly */
     max-height: 700px; /* Limit image height */
     object-fit: cover; /* Ensure the image covers the area */
 }
 
 /* Hero  Mobile */
-@media screen and (max-width: 769px) { /* TABLETS  */
+@media screen and (max-width: 768px) { /* TABLETS  */
     .hero_container {
         grid-template-columns: 1fr;
         height: auto;
@@ -239,7 +239,7 @@ html {
 
     .hero_content {
         text-align: center;
-        margin-bottom: 4rem;
+        margin-bottom: 0.5rem;
         padding: 0 2rem;
     }
 
@@ -250,6 +250,10 @@ html {
 
     .hero_content p {
         font-size: 1.0rem;
+    }
+
+    .hero_image {
+        padding-top: -50px;
     }
 }
 
@@ -268,4 +272,127 @@ html {
         padding: 12px 36px;
         margin: 2.5rem 0;
     }
+}
+
+/* about lab */
+/* About Lab Section */
+.about-lab {
+    background-color: #f9f9f9; /* Light background color */
+    padding: 60px 0; /* Add padding for spacing */
+}
+
+.about-lab_container {
+    max-width: 1200px; /* Limit width for better readability */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Add padding for smaller screens */
+}
+
+.about-lab_content {
+    text-align: center; /* Center-align text */
+}
+
+.about-lab_content h2 {
+    font-size: 2.5rem; /* Large heading size */
+    color: #060a3f; /* Dark blue color */
+    margin-bottom: 1rem; /* Spacing below heading */
+}
+
+.about-lab_content h2 span {
+    color: #15b856; /* Green color for "First Rate Lab LLC" */
+}
+
+.about-lab_content p {
+    font-size: 1.1rem; /* Comfortable reading size */
+    color: #333; /* Dark gray color for text */
+    line-height: 1.6; /* Improve readability */
+    margin-bottom: 1.5rem; /* Spacing between paragraphs */
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+    .about-lab_content h2 {
+        font-size: 2rem; /* Smaller heading for mobile */
+    }
+
+    .about-lab_content p {
+        font-size: 1rem; /* Smaller text for mobile */
+    }
+}
+
+/* footer */
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer_links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer_links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer_links a:hover {
+    color: #15b856;
+}
+
+/* privacy page*/
+
+.privacy_page {
+    background-color: #060a3f;
+}
+
+.privacy-policy {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgb(228, 228, 228);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.privacy-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #060a3f;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.privacy-h2 {
+    font-size: 1.5rem;
+    color: #060a3f;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+.privacy-p {
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.privacy-ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.privacy-container {
+    padding: 20px;
 }
