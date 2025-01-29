@@ -1,8 +1,8 @@
-const menu = document.querySelector('#mobile-menu')
-const menuLinks = document.querySelector('.navbar_menu')
+const menu = document.querySelector('#mobile-menu');
+const menuLinks = document.querySelector('.navbar_menu');
 
 menu.addEventListener('click', function() {
-    menu.classList.toggle('is-active')
+    const isOpen = menu.classList.toggle('is-active');
     menuLinks.classList.toggle('active');
-    // console.log("opened navmenu");
+    menu.setAttribute('aria-expanded', isOpen); //aria-expanded
 });
