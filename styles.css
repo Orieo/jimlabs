@@ -645,6 +645,97 @@ footer {
     }
 }
 
+.mission-vision-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.mission-vision-content {
+    flex: 1;
+    max-width: 60%;
+    padding-right: 40px; 
+}
+
+.mission-vision-content h2 {
+    font-size: 2.5rem;
+    color: #060a3f;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.mission-vision-content .mission-text,
+.mission-vision-content .vision-text {
+    font-size: 1.2rem;
+    color: #333; 
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.mission-vision-content .mission-link {
+    color: #15b856; 
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    transition: color 0.3s ease;
+}
+
+.mission-vision-content .mission-link:hover {
+    color: #118d43; 
+}
+
+.mission-vision-content .mission-link i {
+    font-size: 1rem; 
+}
+
+.mission-vision-image {
+    flex: 1;
+    max-width: 40%;
+}
+
+.mission-vision-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; 
+}
+
+
+@media screen and (max-width: 768px) {
+    .mission-vision-container {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .mission-vision-content {
+        max-width: 100%;
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .mission-vision-image {
+        max-width: 100%;
+    }
+
+    .mission-vision-content h2 {
+        font-size: 2rem;
+    }
+
+    .mission-vision-content .mission-text,
+    .mission-vision-content .vision-text {
+        font-size: 1rem;
+    }
+
+    .mission-vision-content .mission-link {
+        font-size: 1rem;
+    }
+}
+
 .impact-banner {
     background-image: url('/images/consult.jpg'); 
     background-size: cover; 
