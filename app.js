@@ -19,6 +19,5 @@ function scrollToContactUs() {
         }
     }
 }
-
 // Run the function when the page loads
 window.addEventListener("load", scrollToContactUs);
