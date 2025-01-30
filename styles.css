@@ -11,6 +11,7 @@ html {
     scroll-behavior: smooth;
 }
 
+
 .navbar_container {
     display: flex;
     justify-content: space-between;
@@ -187,7 +188,7 @@ html {
 }
 
 .hero_content h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
 
 }
 
@@ -275,48 +276,214 @@ html {
 }
 
 /* about lab */
-/* About Lab Section */
 .about-lab {
-    background-color: #f9f9f9; /* Light background color */
-    padding: 60px 0; /* Add padding for spacing */
+    background-color: #f9f9f9; 
+    padding: 60px 0; 
 }
 
 .about-lab_container {
-    max-width: 1200px; /* Limit width for better readability */
+    max-width: 1200px; 
     margin: 0 auto; /* Center the container */
-    padding: 0 20px; /* Add padding for smaller screens */
+    padding: 0 20px; 
 }
 
 .about-lab_content {
-    text-align: center; /* Center-align text */
+    text-align: center; 
 }
 
 .about-lab_content h2 {
     font-size: 2.5rem; /* Large heading size */
-    color: #060a3f; /* Dark blue color */
+    color: #060a3f;
     margin-bottom: 1rem; /* Spacing below heading */
 }
 
 .about-lab_content h2 span {
-    color: #15b856; /* Green color for "First Rate Lab LLC" */
+    color: #15b856; 
 }
 
 .about-lab_content p {
-    font-size: 1.1rem; /* Comfortable reading size */
-    color: #333; /* Dark gray color for text */
-    line-height: 1.6; /* Improve readability */
-    margin-bottom: 1.5rem; /* Spacing between paragraphs */
+    font-size: 1.1rem; 
+    color: #333; 
+    line-height: 1.6; 
+    margin-bottom: 1.5rem; 
 }
 
-/* Responsive Design for Mobile */
 @media screen and (max-width: 768px) {
     .about-lab_content h2 {
-        font-size: 2rem; /* Smaller heading for mobile */
+        font-size: 2rem; 
     }
 
     .about-lab_content p {
-        font-size: 1rem; /* Smaller text for mobile */
+        font-size: 1rem; 
     }
+}
+
+/* Services */
+.services-container {
+    background-color: #080d55;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services-content h2 {
+    font-size: 2.5rem;
+    color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+.services-content p {
+    font-size: 1.0rem;
+    color: #f9f9f9;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-item {
+    background-color: #e6e6e6;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+    position: relative; /*positioned relative to the service item */
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+.service-image {
+    width: 100%;
+    height: 350px; /* Fixed height for all images */
+    overflow: hidden; /* Ensures the image doesn't overflow the container */
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+
+.service-item h3 {
+    font-size: 1.8rem;
+    color: #060a3f;
+    margin-bottom: 15px;
+}
+
+.service-item p {
+    font-size: 1rem;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+.service-arrow {
+    color: #060a3f;
+    font-size: 1.3rem;
+    text-decoration: none;
+    position: absolute; /* Position the arrow absolutely within the service item */
+    right: 20px; 
+    top: 25px;
+}
+
+.service-arrow:hover {
+    color: #0f1896;
+}
+
+@media screen and (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr; /* Stack items vertically on smaller screens */
+    }
+
+    .services-content h2 {
+        font-size: 2rem;
+    }
+
+    .services-content p {
+        font-size: 1rem;
+    }
+
+    .service-item h3 {
+        font-size: 1.5rem;
+    }
+
+    .service-item p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Contact */
+.contact-container {
+    background-color: #060a3f;
+    padding: 60px 20px;
+    text-align: center;
+    color: #f9f9f9;
+}
+
+.contact-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-content p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #15b856;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #118d43;
 }
 
 /* footer */
@@ -395,4 +562,176 @@ footer {
 
 .privacy-container {
     padding: 20px;
+}
+
+/* About Us */
+.about-banner {
+    background-image: url('images/labbanner.avif');
+    background-size: cover; /* Ensures the image covers the container */
+    background-position: center; /* Centers the image */
+    height: 500px; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    text-align: left; 
+    color: #fff; 
+    position: relative;
+    padding-left: 50px; 
+}
+
+.about-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.about-banner-content {
+    position: relative;
+    z-index: 1; 
+    max-width: 800px;
+}
+
+.about-banner h1 {
+    font-size: 1.2rem; 
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.about-banner .highlight-text {
+    font-size: 2.5rem; 
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.about-banner .description-text {
+    font-size: 1.2rem; 
+    line-height: 1.6;
+}
+
+@media screen and (max-width: 768px) {
+    .about-banner {
+        background-image: url('images/labbanner.avif');
+        background-size: cover; /* Ensures the image covers the container */
+        background-position: center; /* Centers the image */
+        height: 500px; 
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; 
+        text-align: left; 
+        color: #fff; 
+        position: relative;
+        padding-left: 50px; 
+    }
+    .about-banner {
+        height: 600px; 
+        padding-left: 20px; 
+    }
+
+    .about-banner h1 {
+        font-size: 0.7rem;
+    }
+
+    .about-banner .highlight-text {
+        font-size: 1.5rem;
+    }
+
+    .about-banner .description-text {
+        font-size: 1rem;
+    }
+}
+
+.impact-banner {
+    background-image: url('/images/consult.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 500px; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    text-align: left; 
+    color: #fff; 
+    position: relative;
+    padding-left: 50px;
+}
+
+.impact-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.impact-banner-content {
+    position: relative;
+    z-index: 1; 
+    max-width: 800px;
+}
+
+.impact-banner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.impact-banner .impact-text {
+    font-size: 1.5rem; 
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.impact-banner .impact-description {
+    font-size: 1.2rem; 
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.impact-banner .impact-link {
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    transition: color 0.3s ease;
+}
+
+.impact-banner .impact-link:hover {
+    color: #15b856; 
+}
+
+.impact-banner .impact-link i {
+    font-size: 1rem; 
+}
+
+@media screen and (max-width: 768px) {
+    .impact-banner {
+        height: 400px; 
+        padding-left: 20px; 
+    }
+
+    .impact-banner h2 {
+        font-size: 2rem;
+    }
+
+    .impact-banner .impact-text {
+        font-size: 1.5rem;
+    }
+
+    .impact-banner .impact-description {
+        font-size: 1rem;
+    }
+
+    .impact-banner .impact-link {
+        font-size: 1rem;
+    }
 }
