@@ -196,25 +196,23 @@ html {
     margin-top: 1rem;
     font-size: 1.2rem;
     word-spacing: 0.5px;
+    margin-bottom: 1.2rem;
 }
 
 .hero_btn {
-    font-size: 1rem;
-    background: #15b856;
-    padding: 14px 32px;
-    border: none;
-    border-radius: 4px;
+    display: inline-block;
+    padding: 15px 20px;
+    background-color: #15b856;
     color: #fff;
-    margin-top: 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
     cursor: pointer;
-    outline: none;
-    transition: all 0.5s ease;
+    transition: background-color 0.3s ease;
 }
 
 .hero_btn:hover {
-    background-color: #118d43;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    background-color: #10853f;
 }
 
 .hero_image {
@@ -484,6 +482,94 @@ html {
 
 .submit-btn:hover {
     background-color: #118d43;
+}
+
+/* Contact Information */
+.contact-info-container {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.contact-info-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.contact-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.contact-item {
+    flex: 1 1 200px;
+    max-width: 250px;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.contact-item p {
+    font-size: 1rem;
+    color: #777;
+    margin: 0;
+}
+
+.contact-codes {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.contact-codes p {
+    margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+    .contact-info-container {
+        padding: 1rem;
+    }
+
+    .contact-info-content h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .contact-details {
+        gap: 1rem;
+    }
+
+    .contact-item {
+        flex: 1 1 calc(50% - 1rem); /* Two items per row w gap */
+        max-width: calc(50% - 1rem);
+        padding: 0.75rem;
+    }
+
+    .contact-item h3 {
+        font-size: 1rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .contact-item p {
+        font-size: 0.875rem;
+    }
+
+    .contact-codes {
+        font-size: 0.8rem;
+    }
 }
 
 /* footer */
