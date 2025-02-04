@@ -229,6 +229,7 @@ html {
 
 /* Hero  Mobile */
 @media screen and (max-width: 768px) { /* TABLETS  */
+
     .hero_container {
         grid-template-columns: 1fr;
         height: auto;
@@ -258,6 +259,11 @@ html {
 
 
 @media screen and (max-width: 480px) { /* Phones */
+
+    #navbar_logo { /*navbar logo size on phone*/
+        font-size: 1.5rem;
+    }
+
     .hero_container {
         width: 100vw;
     }
