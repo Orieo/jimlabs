@@ -390,43 +390,44 @@ html {
     margin-bottom: 20px;
 }
 
-.service-arrow {
-    color: #060a3f;
-    font-size: 1.3rem;
-    text-decoration: none;
-    position: absolute; /* Position the arrow absolutely within the service item */
-    right: 20px; 
-    top: 25px;
-}
-
-.service-arrow:hover {
-    color: #0f1896;
-}
-
 @media screen and (max-width: 768px) {
+
+    .services-container {
+        background-color: #080d55;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
     .services-grid {
-        grid-template-columns: 1fr; /* Stack items vertically on smaller screens */
+        grid-template-columns: repeat(1, 2fr); 
+        gap: 15px;
     }
 
-    .services-content h2 {
-        font-size: 2rem;
+    .service-item {
+        padding: 10px;
+        font-size: 0.9rem;
     }
 
-    .services-content p {
-        font-size: 1rem;
+    .service-image {
+        height: 180px; /* Smaller images */
     }
 
     .service-item h3 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .service-item p {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 }
 
-/* Contact */
+.service-link {
+    text-decoration: none; /* remove the underline */
+    color: inherit;
+    display: block; /* entire div is clickable */
+}
 
+/* Contact */
 .contact-form label {
     color: white;
 }
@@ -957,6 +958,7 @@ footer {
 .booking-form {
     padding: 2rem;
     background-color: #f9f9f9;
+    padding-top: 7rem;
 }
 
 .form-container {

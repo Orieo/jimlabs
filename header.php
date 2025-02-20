@@ -20,10 +20,10 @@
                         <a href="aboutus.php" class="navbar_links">ABOUT</a>
                     </li>
                     <li class="navbar_item">
-                        <a href="tests.php" class="navbar_links">TESTS</a>
+                        <a href="faq.php" class="navbar_links">FAQ</a>
                     </li>
                     <li class="navbar_item">
-                        <a href="faq.php" class="navbar_links">FAQ</a>
+                        <a href="tests.php" class="navbar_links">RESULTS</a>
                     </li>
                     <li class="navbar_item">
                         <a href="index.php#contact-us" class="navbar_links">CONTACT US</a>

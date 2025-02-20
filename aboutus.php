@@ -23,7 +23,7 @@
             </p>
         </div>
         <div class="mission-vision-image">
-            <img src="/images/lab2.jpg" alt="Laboratory Image">
+            <img src="images/labtwo.jpg" alt="Laboratory Image">
         </div>
     </section>
 
